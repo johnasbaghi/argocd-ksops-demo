@@ -96,7 +96,8 @@ sops --decrypt -p "${GPG_ID}" app/secret.enc.yaml
 
 ### Test the ksops integration by pushing this repo to a Git forge and creating an Application using app as your path
 
-
-
+```
+kubectl apply -n argocd -f application.yaml
+```
 
 
